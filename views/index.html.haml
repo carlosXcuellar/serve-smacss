@@ -16,7 +16,7 @@
           %h2 Serve SMACSS
           %p Delicious ERB, Haml + Sass
         .l-header__nav
-          %nav{"aria-label" => "Navigation", role: "navigation"}
+          %nav
             %ul.list--inline
               %li
                 %a{:href => "#"}
@@ -33,32 +33,57 @@
         %h3 Some text
         %p
           Quisque ac nisi quis justo iaculis molestie. Ut non risus quis dui sodales mollis. Morbi libero est, semper ac ligula a, pharetra tempor nisl. Nunc sodales a lacus eu aliquam. Mauris leo arcu, ornare eu nulla in, egestas convallis tellus. Ut nec ligula non mi sodales consequat. Aenean volutpat consectetur neque, sit amet suscipit libero rhoncus at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-        %h3 Some Buttons
+        %h3 Some butons
         %p
           %a.button--small{:href => "#"} Small Button
         %p
           %a.button{:href => "#"} Medium Button
         %p
           %a.button--large{:href => "#"} Large Button
+        %h3 Some lists
+        %ul
+          %li
+            item 1
+          %li
+            item 2
+          %li
+            item 3
         
       .l-aside
-        %h4 A nice aside
-        %p We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.
+        %form{action: "#", method: "get", role: "search"}
+          %h4
+            %label{for: "search-textbox"} Search
+          %input#search-textbox{name: "q", placeholder: "Search...", type: "search"}
+
+        %h4 Some aside content
+        %p Nunc sodales a lacus eu aliquam. Mauris leo arcu, ornare eu nulla in, egestas convallis tellus. Ut nec ligula non mi sodales consequat. Aenean volutpat consectetur neque, sit amet suscipit libero rhoncus at.
         %h4 Other Resources
         %p Once you've exhausted the fun in this document, you should check out:
         %ul
           %li
-            %a{:href => "http://foundation.zurb.com/docs"} Foundation Documentation
+            %a{:href => "http://get-serve.com/documentation"} Serve Documentation
             = succeed "Everything" do
               %br/
-            you need to know about using the framework.
+            you need to know about using this project.
           %li
-            %a{:href => "http://github.com/zurb/foundation"} Foundation on Github
-            = succeed "Latest" do
+            %a{:href => "http://github.com/zurb/foundation"} txp.smacss
+            = succeed "Examples" do
               %br/
-            code, issue reports, feature requests and more.
+            of the CSS used in this project.
+
+    %footer.l-footer
+      %nav.l-footer__nav
+        %ul.list--inline
           %li
-            %a{:href => "http://twitter.com/foundationzurb"} @foundationzurb
-            = succeed "Ping" do
-              %br/
-            us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).
+            %a{:href => "#"}
+              Section 1
+          %li
+            %a{:href => "#"}
+              Section 2
+          %li.active
+            %a{:href => "#"}
+              Section 3
+      .l-footer__credits
+        Published with
+        = succeed "." do
+          %a{href: "http://get-serve.com/", rel: "external", title: "Go to the Serve website"} Serve
