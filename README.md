@@ -87,14 +87,6 @@ Where "project" is the path to the project and "output" is the path to the
 directory where you would like your HTML and CSS generated.
 
 
-Upgrading ZURB Foundation
--------------------------
-If, for some reason, you feel the need to update the bundled Foundation version (say: I forget to upgrade the gem when a new version comes out :) follow these steps:
-
-- bump the gem version for 'zurb-foundation' in `Gemfile`
-- run `bundle install` to install the new version (and all dependencies)
-- run `rake upgrade` to update the files in the public, sass and views folders (beware: if you've edited any of the files, you'll most probably lose your edits. The command is intended to be run on a clean repository clone).
-
 Deploy to Heroku
 ----------------
 If everything is setup correctly, you only need to run `heroku create app-name` and `git push heroku master`
