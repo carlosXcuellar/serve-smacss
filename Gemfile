@@ -22,7 +22,7 @@ gem 'haml', '4.0.3'
 # gem 'less'
 
 # Coffee Script
-# gem 'coffee-script'
+gem 'coffee-script'
 
 # Use thin for the Web server
 gem 'thin'
