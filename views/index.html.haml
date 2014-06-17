@@ -1,90 +1,50 @@
-!!!
-/[if IE 8] <html class="no-js lt-ie9" lang="en" >
-/ [if gt IE 8]><!
-%html.no-js{:lang => "en"}
-  / <![endif]
-  %head
-    %meta{:charset => "utf-8"}/
-    %meta{:content => "width=device-width", :name => "viewport"}
-    %title Serve SMACSS
-    %link{:href => "stylesheets/app.css", :rel => "stylesheet"}
-    %script{:src => "javascripts/vendor/custom.modernizr.js"}
-  %body
-    .l-container
-      .l-header
-        .l-header__brand
-          %h2 Serve SMACSS
-          %p Delicious ERB, Haml + Sass
-        .l-header__nav
-          %nav
-            %ul.list--inline
-              %li
-                %a{:href => "#"}
-                  Section 1
-              %li
-                %a{:href => "#"}
-                  Section 2
-              %li.active
-                %a{:href => "#"}
-                  Section 3
-      %hr
-    .l-container
-      .l-content
-        %h3 Some text
-        %p
-          Quisque ac nisi quis justo iaculis molestie. Ut non risus quis dui sodales mollis. Morbi libero est, semper ac ligula a, pharetra tempor nisl. Nunc sodales a lacus eu aliquam. Mauris leo arcu, ornare eu nulla in, egestas convallis tellus. Ut nec ligula non mi sodales consequat. Aenean volutpat consectetur neque, sit amet suscipit libero rhoncus at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-        %h3 Some butons
-        %p
-          %a.button--small{:href => "#"} Small Button
-        %p
-          %a.button{:href => "#"} Medium Button
-        %p
-          %a.button--large{:href => "#"} Large Button
-        %h3 Some lists
-        %ul
-          %li
-            item 1
-          %li
-            item 2
-          %li
-            item 3
-        
-      .l-aside
-        %form{action: "#", method: "get", role: "search"}
-          %h4
-            %label{for: "search-textbox"} Search
-          %input#search-textbox{name: "q", placeholder: "Search...", type: "search"}
+- @title = "Serve SMACSS"
 
-        %h4 Some aside content
-        %p Nunc sodales a lacus eu aliquam. Mauris leo arcu, ornare eu nulla in, egestas convallis tellus. Ut nec ligula non mi sodales consequat. Aenean volutpat consectetur neque, sit amet suscipit libero rhoncus at.
-        %h4 Other Resources
-        %p Once you've exhausted the fun in this document, you should check out:
-        %ul
-          %li
-            %a{:href => "http://get-serve.com/documentation"} Serve Documentation
-            = succeed "Everything" do
-              %br/
-            you need to know about using this project.
-          %li
-            %a{:href => "http://github.com/zurb/foundation"} txp.smacss
-            = succeed "Examples" do
-              %br/
-            of the CSS used in this project.
-
-    %footer.l-footer
-      %nav.l-footer__nav
-        %ul.list--inline
-          %li
-            %a{:href => "#"}
-              Section 1
-          %li
-            %a{:href => "#"}
-              Section 2
-          %li.active
-            %a{:href => "#"}
-              Section 3
-      .l-footer__credits
-        Published with
-        = succeed "." do
-          %a{href: "http://get-serve.com/", rel: "external", title: "Go to the Serve website"} Serve
-    %script{:src => "javascripts/app.js"}
+%p
+  %img{alt: "serve logo", src: "/images/serve-logo.png"}
+%h3
+  An intro to Serve
+%dl
+  %dt
+    %strong Views &amp; Layouts
+  %dd
+    Your views are stored in the
+    %kbd views
+    folder. Coming from a page-based
+    scripting language like PHP? Views are just like regular pages. The main layout
+    file for this project is stored in
+    = succeed "." do
+      %kbd layouts/default
+  %dt
+    %strong Stylesheets, Sass &amp; Compass
+  %dd
+    This project is pre-configured for
+    %a{href: "http://sass-lang.com"} Sass
+    and
+    = succeed "." do
+      %a{href: "http://compass-style.org"} Compass
+    %kbd sass
+    and
+    %kbd scss
+    files in the root
+    %kbd stylesheets
+    folder. Sass
+    stylesheets will be automatically compiled to CSS and stored in
+    = succeed "." do
+      %kbd public/stylesheets
+  %dt
+    %strong Static Assets
+  %dd
+    Static assets like images, javascripts, and downloads are stored in the
+    %kbd public
+    folder. Put files here that don&#8217;t need special
+    processing by Serve.
+.box
+  %h6 Other Template Languagesaaa
+  %p
+    If you are interested in using Serve with other template languages like Haml,
+    Slim, Markdown, or Textile, remember to edit the project
+    %kbd Gemfile
+    to include the appropriate gems. Then use
+    %a{href: "http://gembundler.com/"} Bundler
+    to install them.
