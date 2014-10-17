@@ -91,8 +91,8 @@ Deploy to Heroku
 ----------------
 If everything is setup correctly, you only need to run `heroku create app-name` and `git push heroku master`
 
-Learning More
--------------
+Learning More...
+----------------
 
 You can learn more about Serve on the project page:
 
