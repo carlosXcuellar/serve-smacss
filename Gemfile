@@ -9,6 +9,7 @@ gem 'compass'
 gem 'bourbon-compass'
 gem 'neat-compass'
 gem 'sass'
+gem 'autoprefixer-rails'
 
 # Markdown and Textile
 # gem 'rdiscount' # Markdown
