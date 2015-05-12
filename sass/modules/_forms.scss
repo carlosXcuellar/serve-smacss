@@ -26,9 +26,11 @@ select {
 label {
   margin-bottom: $base-line-height / 4;
   font-weight: bold;
+
   &.required:after {
     content: "*";
   }
+  
   abbr {
     display: none;
   }
@@ -47,9 +49,11 @@ textarea,
   box-shadow: $form-box-shadow;
   font-size: $form-font-size;
   font-family: $form-font-family;
+
   &:hover {
     border-color: $form-border-color-hover;
   }
+
   &:focus {
     outline: none;
     border-color: $form-border-color-focus;
@@ -82,6 +86,7 @@ select {
   background-position-x: 92%;
   background-position-y: center;
   -webkit-appearance: none !important; 
+
   &:hover {
     border-color: $form-border-color-hover;
     background: #f2f2f2 url('data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iM3B4IiB2aWV3Qm94PSIwIDAgNiAzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2IDMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIHBvaW50cz0iNS45OTIsMCAyLjk5MiwzIC0wLjAwOCwwICIvPjwvc3ZnPg==') no-repeat;

@@ -8,10 +8,12 @@ ul, ol {
 dl {
   margin-bottom: $base-line-height / 2;
   line-height: $base-line-height;
+
   dt {
     margin-top: $base-line-height / 2;
     font-weight: bold;
   }
+
   dd {
     margin: 0;
   }
@@ -27,6 +29,7 @@ dl {
   display: inline;
   padding-left: 0;
   list-style-type: none;
+  
   li {
     @include inline-block;
     padding-right: 5px;

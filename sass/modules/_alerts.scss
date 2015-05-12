@@ -22,8 +22,10 @@
 .alert--warning {
   @extend %alert;
   background: $notice-color;
+
   a {
     color: darken($notice-color, 40%);
+
     &:hover {
       color: darken($notice-color, 70%);
     }
@@ -34,8 +36,10 @@
 .alert--success {
   @extend %alert;
   background: $success-color;
+
   a {
     color: darken($success-color, 40%);
+
     &:hover {
       color: darken($success-color, 70%);
     }
@@ -46,8 +50,10 @@
 .alert--info {
   @extend %alert;
   background: $light-blue;
+
   a {
     color: darken($light-blue, 40%);
+    
     &:hover {
       color: darken($light-blue, 70%);
     }
