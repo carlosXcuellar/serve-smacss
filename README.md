@@ -94,6 +94,6 @@ If everything is setup correctly, you only need to run `heroku create app-name` 
 Learning More...
 ----------------
 
-You can learn more about Serve on the project page:
+You can learn more about Serve on the project page::
 
 <http://get-serve.com>
